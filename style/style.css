@@ -9,7 +9,7 @@
 body {
   font-family: "Red Hat Text", sans-serif;
   background-color: hsl(235, 16%, 14%);
-  overflow-y: hidden;
+  overflow: hidden;
 }
 img {
   max-width: 100%;
@@ -139,11 +139,14 @@ ul {
 /*------------- Stars background -----------*/
 .stars {
   position: absolute;
-  width: 1440px;
+  width: 100vw;
+  height: 80vh;
   z-index: -1;
 }
 .stars img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*------------- Hills background -----------*/
